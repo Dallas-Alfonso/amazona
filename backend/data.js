@@ -24,7 +24,7 @@ const data = {
             brand: 'Nike',
             rating: 4.5, 
             numReviews: 10,
-            description: 'high quality product',
+            description: 'High quality product, very durable',
         },
         {
             name:'Adidas Fit Shirt',
@@ -35,7 +35,7 @@ const data = {
             brand: 'Adidas',
             rating: 4.0,
             numReviews: 10,
-            description: 'high quality product',
+            description: 'Easy to put on',
         },
         {
             name:'Lacoste Free Shirt',
@@ -46,7 +46,7 @@ const data = {
             brand: 'Lacoste',
             rating: 4.8,
             numReviews: 17,
-            description: 'high quality product',
+            description: 'Soft fabric.  Very breathable',
         },
         {
             name:'Nike Slim Pant',
@@ -57,7 +57,7 @@ const data = {
             brand: 'Nike',
             rating: 4.5,
             numReviews: 14,
-            description: 'high quality product',
+            description: 'Quality fabric.  Conflict free',
         },
         {
             name:'Puma Slim Pant',
@@ -68,7 +68,7 @@ const data = {
             brand: 'Puma',
             rating: 4.5,
             numReviews: 10,
-            description: 'high quality product',
+            description: 'East to clean.',
         },
         {
             name:'Adidas Fit Pant',
@@ -79,8 +79,8 @@ const data = {
             brand: 'Adidas',
             rating: 4.5,
             numReviews: 15,
-            description: 'high quality product',
-        }
-    ]
-}
+            description: 'Fits for any occasion',
+        },
+    ],
+};
 export default data;
