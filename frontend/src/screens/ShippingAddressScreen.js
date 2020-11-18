@@ -22,7 +22,7 @@ export default function ShippingAddressScreen(props) {
         dispatch(
             saveShippingAddress({fullName, address, city, postalCode, country}));
     };
-    // props.history.push('/payment');
+        props.history.push('/payment');
     
     return (
         <div>
@@ -43,7 +43,7 @@ export default function ShippingAddressScreen(props) {
                     ></input>
                 </div>
                 <div>
-                    <label htmlFor="address">Adress</label>
+                    <label htmlFor="address">Address</label>
                     <input
                     type="text"
                     id="address"

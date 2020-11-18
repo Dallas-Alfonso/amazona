@@ -201,7 +201,7 @@ img.large{
   background-color: #ffe0e0e0;
 }
 
-/* From */
+/* Form */
 .form {
   max-width: 60rem;
   margin: 0 auto;
@@ -213,7 +213,7 @@ img.large{
 }
 .form label {
   margin: 1rem 0;
-  display: block;
+  
 }
 /* Dropdown */
 .dropdown{
