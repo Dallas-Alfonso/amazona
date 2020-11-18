@@ -34,8 +34,7 @@ function App() {
                     <span className = "badge">{cartItems.length}</span>
                   )}
                   </Link>
-                  {
-                    userInfo ? (
+                  {userInfo ? (
                       <div className="dropdown">
                     <Link to="#">{userInfo.name} <i className="fa fa-caret-down"></i>{' '} 
                     </Link>
@@ -49,9 +48,7 @@ function App() {
                     </div>
                     ) : (
                       <Link to="/signin">Sign In</Link>
-                    )
-                  }
-                
+                    )}
             </div>
         </header>
         <main>

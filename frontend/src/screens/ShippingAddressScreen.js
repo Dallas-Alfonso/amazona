@@ -20,10 +20,10 @@ export default function ShippingAddressScreen(props) {
     const submitHandler = (e) => {
         e.preventDefault();
         dispatch(
-            saveShippingAddress({fullName, address, city, postalCode, country}));
-    };
+            saveShippingAddress({fullName, address, city, postalCode, country})
+            );
         props.history.push('/payment');
-    
+};
     return (
         <div>
             <CheckoutSteps step1 step2></CheckoutSteps>
@@ -91,7 +91,7 @@ export default function ShippingAddressScreen(props) {
                 <button className="primary" type="submit">
                     Continue
                 </button>
-            </div>
+                </div>
             </form>
         </div>
     );
