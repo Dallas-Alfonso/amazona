@@ -2,10 +2,10 @@ import {
     ORDER_CREATE_FAIL,
     ORDER_CREATE_REQUEST, 
     ORDER_CREATE_RESET, 
-    ORDER_CREATE_SUCCESS } 
-    from '../constants/orderConstants';
+    ORDER_CREATE_SUCCESS,
+ } from '../constants/orderConstants';
 
-export const orderCreatedReducer = (state ={}, action) => {
+export const orderCreateReducer = (state ={}, action) => {
     switch (action.type) {
         case ORDER_CREATE_REQUEST:
             return {loading: true};
