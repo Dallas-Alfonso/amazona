@@ -15,7 +15,6 @@ import RegisterScreen from './screens/RegisterScreen';
 import ShippingAddressScreen from './screens/ShippingAddressScreen';
 import SigninScreen from './screens/SigninScreen';
 
-
 function App() {
   const cart = useSelector((state) => state.cart);
   const {cartItems} = cart;
