@@ -41,7 +41,7 @@ export default function UserListScreen() {
                                         <td>{user.isAdmin ? 'YES' : 'NO'}</td>
                                         <td>
                                             <button>Edit</button>
-                                            <button>Delete</button>
+                                            <button>Deleteeeee</button>
                                         </td>
                                     </tr>
                                 ))
