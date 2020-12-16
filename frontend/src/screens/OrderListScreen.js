@@ -35,7 +35,7 @@ export default function OrderListScreen(props) {
             ):error? (
             <MessageBox variant="danger">{error}</MessageBox>
             ):(
-                <table className = "table">
+                <table className ="table">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -52,13 +52,10 @@ export default function OrderListScreen(props) {
                             <tr key={order._id}>
                                 <td>{order._id}</td>
                                 <td>{order.user.name}</td>
-                                <td>{order.createdAt.substring(0,10)}</td>
+                                <td>{order.createdAt.substring(0, 10)}</td>
                                 <td>{order.totalPrice.toFixed(2)}</td>
-                                <td>{order.isPaid ? order.paidAt.substring(0,10) : 'No'}</td>
-                                <td>{order.isDelivered
-                                    ? order.deliveredAt.substring(0, 10)
-                                    : 'No'}
-                                </td>
+                                <td>{order.isPaid ? order.paidAt.substring(0, 10) : 'No'}</td>
+                                <td>{order.isDelivered ? order.deliveredAt.substring(0, 10): 'No'}</td>
                                 <td>
                                     <button
                                     type="button"
