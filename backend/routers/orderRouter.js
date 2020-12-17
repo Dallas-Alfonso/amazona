@@ -9,10 +9,10 @@ orderRouter.get(
     isAuth,
     isAdmin,
     expressAsyncHandler(async (req, res) => {
-        const orders = await Order.find({}).populate('user', 'name');
-        res.send(orders);
+      const orders = await Order.find({}).populate('user', 'name');
+      res.send(orders);
     })
-);
+  );
 orderRouter.get(
     '/mine',
     isAuth,
@@ -34,7 +34,7 @@ orderRouter.post(
                 shippingAddress: req.body.shippingAddress,
                 paymentMethod: req.body.paymentMethod,
                 itemsPrice: req.body.itemsPrice,
-                shippingPrice:req.body.shippingPrice,
+                shippingPrice: req.body.shippingPrice,
                 taxPrice: req.body.taxPrice,
                 totalPrice: req.body.totalPrice,
                 user: req.user._id,
