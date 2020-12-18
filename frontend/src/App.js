@@ -78,7 +78,7 @@ function App() {
                             <Link to="/productlist">Products</Link>
                           </li>
                           <li>
-                            <Link to="orderlist">Orders</Link>
+                            <Link to="/orderlist">Orders</Link>
                           </li>
                           <li>
                             <Link to="/userlist">Users</Link>
@@ -99,10 +99,7 @@ function App() {
           <Route path="/placeorder" component={PlaceOrderScreen}></Route>
           <Route path="/order/:id" component={OrderScreen}></Route>
           <Route path="/orderhistory" component={OrderHistoryScreen}></Route>
-          <PrivateRoute 
-          path="/profile" 
-          component={ProfileScreen}
-          ></PrivateRoute>
+          <PrivateRoute path="/profile" component={ProfileScreen}></PrivateRoute>
           <AdminRoute path="/productlist" component={ProductListScreen}></AdminRoute>
           <AdminRoute path="/orderlist"component={OrderListScreen}></AdminRoute>
           <AdminRoute path="/userlist" component={UserListScreen}></AdminRoute>
