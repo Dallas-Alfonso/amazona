@@ -15,7 +15,6 @@ export default function ProfileScreen() {
     const [sellerLogo, setSellerLogo] = useState('');
     const [sellerDescription, setSellerDescription] = useState('');
 
-
     const userSignin = useSelector((state) => state.userSignin);
     const { userInfo } = userSignin;
     const userDetails = useSelector((state) => state.userDetails);
@@ -47,7 +46,6 @@ export default function ProfileScreen() {
         if (password !== confirmPassword) {
             alert('Password and Confrim Password Are Not Matched');
         } else {
-            console.log(sellerName)
             dispatch(
                 updateUserProfile({ 
                     userId: user._id, 
@@ -145,7 +143,7 @@ export default function ProfileScreen() {
                                 ></input>
                             </div>
                             <div>
-                                <label htmlFor="sellerName">Seller Description</label>
+                                <label htmlFor="sellerDescription">Seller Description</label>
                                 <input 
                                 id="sellerDescription" 
                                 type="text" 
@@ -155,8 +153,7 @@ export default function ProfileScreen() {
                                 ></input>
                             </div>
                             </>
-                        )
-                    }
+                        )}
                     <div>
                         <label />
                         <button className="primary" type="submit">

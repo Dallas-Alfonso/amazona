@@ -25,6 +25,7 @@ export default function ProductListScreen(props) {
         error: errorDelete,
         success: successDelete,
     } = productDelete;
+    
     const userSignin = useSelector((state) => state.userSignin );
     const { userInfo } = userSignin;
     const dispatch = useDispatch();

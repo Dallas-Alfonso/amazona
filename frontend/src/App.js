@@ -128,6 +128,7 @@ function App() {
           path="/orderlist/seller"
           component={OrderListScreen}
           ></SellerRoute>
+          
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
         <footer className="row center">All rights reserved</footer>
