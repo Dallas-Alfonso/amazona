@@ -5,9 +5,18 @@ import { listProducts } from '../actions/productActions';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import Product from '../components/Product';
+import Rating from '../components/Rating';
+//import { PRODUCT_LIST_SUCCESS } from '../constants/productConstants';
+import { prices } from '../utils';
 
 export default function SearchScreen(props) {
-    const { name = 'all', category = 'all' } = useParams();
+    const { 
+        name = 'all', 
+        category = 'all', 
+        min = 0, 
+        max = 0, 
+        rating = 0,
+    } = useParams();
     const dispatch = useDispatch();
     const productList = useSelector((state) => state.productList);
     const { loading, error, products } = productList;
@@ -23,14 +32,20 @@ export default function SearchScreen(props) {
             listProducts({ 
             name: name !== 'all' ? name : '',
             category: category !== 'all' ? category : '',
+            min,
+            max,
+            rating,
          })
          );
-    }, [category, dispatch, name]);
+    }, [category, dispatch, max, min, name, rating]);
 
     const getFilterUrl = (filter) => {
         const filterCategory = filter.category || category;
         const filterName = filter.name || name;
-        return `/search/category/${filterCategory}/name/${filterName}`;
+        const filterRating = filter.rating || rating;
+        const filterMin = filter.min ? filter.min : filter.min === 0 ? 0 : min;
+        const filterMax = filter.max ? filter.max : filter.max === 0 ? 0 : max;
+        return `/search/category/${filterCategory}/name/${filterName}/min/${filterMin}/max/${filterMax}/rating/${filterRating}`;
     };
     return (
         <div>
@@ -46,7 +61,7 @@ export default function SearchScreen(props) {
             <div className="row top">
                 <div className="col-1">
                     <h3>Department</h3>
-                    
+                    <div>
                         {loadingCategories ? (
                             <LoadingBox></LoadingBox>
                         ) : errorCategories ? (
@@ -66,6 +81,40 @@ export default function SearchScreen(props) {
                             </ul>
                             
                         )}
+                        </div>
+                        <div>
+                            <h3>Price</h3>
+                            <ul>
+                                {prices.map((p) => (
+                                    <li key={p.name}>
+                                        <Link
+                                        to={getFilterUrl({ min: p.min, max: p.max })}
+                                        className={
+                                            `${p.min}-${p.max}`  === `${min}-${max}` ? 'active' : ''
+                                        }
+                                        >
+                                            {p.name}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Avg. Customer Review</h3>
+                            <ul>
+                                {ratings.map((r) => (
+                                    <li key={r.name}>
+                                        <Link
+                                        to={getFilterUrl({ rating: r.rating })}
+                                        className={
+                                            r.rating === rating ? 'active' : ''}
+                                        >
+                                        <Rating caption={r.name} rating={r.rating}></Rating> 
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                 </div>
                 <div className="col-3">
                     {loading ? (
@@ -83,7 +132,6 @@ export default function SearchScreen(props) {
                             ))}
                             </div>
                             </>
-                    
                     )}
                 </div>
             </div>
