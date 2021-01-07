@@ -20,10 +20,10 @@ export const prices = [
         max: 1000,
     },
 ];
-export const rating = [
+export const ratings = [
     {
         name: '4stars & up',
-        ratings: 4,
+        rating: 4,
     },
     {
         name: '3stars & up',
