@@ -153,7 +153,7 @@ productRouter.get(
                 const review = {
                     name: req.user.name, 
                     rating: Number(req.body.rating),
-                    comments: req.body.comment,
+                    comment: req.body.comment,
                 };
                 product.reviews.push(review);
                 product.numReviews = product.reviews.length;
