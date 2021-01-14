@@ -13,7 +13,9 @@ body {
 #root {
   height: 100%;
 }
-/* Layout */
+
+/* LAYOUT */
+
 .grid-container{
   display: grid;
   grid-template-areas:
@@ -38,7 +40,8 @@ footer{
   color: #ffffff;
 }
 
-/* Common */
+/* COMMON */
+
 h1{
   font-size: 1.8rem;
   padding: 1rem 0;
@@ -94,7 +97,8 @@ button.small{
   font-size: 1.2rem;
 }
 
-/* Header */
+/* HEADER */
+
 header a{
   color: #ffffff;
   padding: 1rem; 
@@ -143,7 +147,8 @@ a.brand {
   padding: 1rem;
 }
 
-/* Aside */
+/* ASIDE */
+
 aside{
   position: fixed;
   width: 30rem;
@@ -179,7 +184,8 @@ aside li {
 button.close-sidebar {
   padding: 0.3rem 0.8rem;
 }
-/* Image */
+/* IMAGE */
+
 img {
   border-radius: .5rem ;
 }
@@ -195,7 +201,8 @@ img.large{
   width: 100%;
 }
 
-/* Card */
+/* CARD */
+
 .card{
   border: .1rem #c0c0c0 solid;
   background-color: #f8f8f8;
@@ -212,7 +219,8 @@ img.large{
   font-size: 2rem;
 }
 
-/* Rating */
+/* RATING */
+
 .rating span {
   color: #f0c040;
   margin: .1rem;
@@ -221,7 +229,8 @@ img.large{
   color: #404040;
 }
 
-/* Alert */
+/* ALERT */
+
 .loading{
   display: block !important;
 }
@@ -251,7 +260,8 @@ img.large{
   background-color: #eeffe0;
 }
 
-/* Form */
+/* FORM */
+
 .form {
   max-width: 60rem;
   margin: 0 auto;
@@ -265,7 +275,8 @@ img.large{
   margin: 1rem 0;
   
 }
-/* Dropdown */
+/* DROPDOWN */
+
 .dropdown{
   display: inline-block;
   position: relative;
@@ -285,7 +296,8 @@ img.large{
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/* Checkout Steps */
+/* CHECKOUT STEPS */
+
 .checkout-steps > div {
   border-top: .3rem #c0c0c0 solid;
   color: #c0c0c0;
@@ -297,7 +309,8 @@ img.large{
   border-top-color: #f08000;
   color: #f08000;
 }
-/* Table */
+/* TABLE */
+
 .table{
   width: 100%;
   border-collapse: collapse;
@@ -314,12 +327,14 @@ img.large{
 .table button {
   margin: 0 0.2rem;
 }
-/* Carousel */
+/* CAROUSEL */
+
 .carousel .slide img {
   max-width: 30rem;
 }
 
-/* Search */
+/* SEARCH */
+
 .search button {
   border-radius: 0 0.5rem 0.5rem 0;
   border-right: none;
@@ -334,7 +349,8 @@ img.large{
   font-weight: bold;
 }
 
-/* Map */
+/* MAP */
+
 .full-container{
   margin: -1rem;
   height: calc(100% + 2rem);
@@ -357,7 +373,8 @@ img.large{
   border-radius: 0 1rem 1rem 0;
   border-left: 0;
 }
-/* Pagination */
+/* PAGINATION */
+
 .pagination a {
   padding: 1rem;
   margin: 0.5rem;
