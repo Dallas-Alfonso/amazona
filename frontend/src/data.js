@@ -12,6 +12,7 @@ const data = {
             numReviews: 10,
             descritpion: 'high quality product',
         },
+
         {
             _id:'2',
             name:'Adidas Fit Shirt',
@@ -24,6 +25,7 @@ const data = {
             numReviews: 10,
             descritpion: 'high quality product',
         },
+
         {
             _id:'3',
             name:'Lacoste Free Shirt',
@@ -36,6 +38,7 @@ const data = {
             numReviews: 17,
             descritpion: 'high quality product',
         },
+
         {
             _id:'4',
             name:'Nike Slim Pant',
@@ -48,6 +51,7 @@ const data = {
             numReviews: 14,
             descritpion: 'high quality product',
         },
+
         {
             _id:'5',
             name:'Puma Slim Pant',
@@ -60,6 +64,7 @@ const data = {
             numReviews: 10,
             descritpion: 'high quality product',
         },
+        
         {
             _id:'6',
             name:'Adidas Fit Pant',
