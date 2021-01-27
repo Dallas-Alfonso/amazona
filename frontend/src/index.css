@@ -208,6 +208,7 @@ img.large{
   background-color: #f8f8f8;
   border-radius: .5rem;
   margin: 1rem;
+  box-shadow: 12px 10px 10px 1px rgb(190, 190, 190) 
 }
 .card-body{
   padding: 1rem;
