@@ -28,7 +28,9 @@ export default function HomeScreen() {
     }, [dispatch]);
     return (
         <div>
+          <hr></hr>
           <h2>Top Sellers</h2>
+          
           {loadingSellers ? (
         <LoadingBox></LoadingBox>
       ) : errorSellers ? (
@@ -48,7 +50,9 @@ export default function HomeScreen() {
         </Carousel>
         </>
       )}
+      
       <h2>Featured Products</h2>
+      <hr></hr>
       {loading ? (
         <LoadingBox></LoadingBox>
       ) : error ? (
