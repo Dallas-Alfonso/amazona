@@ -14,7 +14,7 @@ Live App: https://amazonn-app.herokuapp.com/
 ![Gif of UserFeatures](./frontend/public/images/UserFeatures.gif)
 
 - Admin Account with priviliges
-- Option to make assign a Seller
+- Option to assign a Seller
 - Approve and deliver paid products
 - Create new products
 
