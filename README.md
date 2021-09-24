@@ -1,14 +1,28 @@
 # Amazonn
 
-An E-Commerce website like Amazon
+E-Commerce website like Amazon
+
+Live App: https://amazonn-app.herokuapp.com/
 
 ## Features
 
-- Sign-In form for users; requires unique names and passwords 
-- User friendly Front-End
-- Scalable backend 
-- Cloud Servers utilized: MongoDB & Mongoose
-- Deployed on Heroku
-- Working PayPal Button
-- Easy to Navigate
-- Responsive
+- Create account and sign in as User
+- Leave a review and rating
+- Live PayPal button
+- MongoDB to record all incoming data
+
+![Gif of UserFeatures](./frontend/public/images/AdminFeatures.gif)
+
+- Admin Account with privilidges
+- Option to make User a Seller
+- Approve and deliver paid products
+- Create new products
+
+## Technologies
+
+- React.JS
+- Node.JS
+- MongoDB & Mongoose
+- Javascript
+- CSS
+- Heroku
