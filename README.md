@@ -9,11 +9,11 @@ Live App: https://amazonn-app.herokuapp.com/
 - Create account and sign in as User
 - Leave a review and rating
 - Live PayPal button
-- MongoDB to record all incoming data
+- MongoDB to record data
 
 ![Gif of UserFeatures](./frontend/public/images/UserFeatures.gif)
 
-- Admin Account with privilidges
+- Admin Account with priviliges
 - Option to make User a Seller
 - Approve and deliver paid products
 - Create new products
