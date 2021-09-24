@@ -11,12 +11,12 @@ Live App: https://amazonn-app.herokuapp.com/
 - Live PayPal button
 - MongoDB to record all incoming data
 
-![Gif of UserFeatures](./frontend/public/images/AdminFeatures.gif)
-
 - Admin Account with privilidges
 - Option to make User a Seller
 - Approve and deliver paid products
 - Create new products
+
+![Gif of AdminFeatures](./frontend/public/images/AdminFeatures.gif)
 
 ## Technologies
 
