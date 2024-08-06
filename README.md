@@ -6,17 +6,17 @@ E-Commerce website like Amazon
 
 ## Features
 
-- Create Account and Sign In: Users can create accounts and sign in.
-- Leave Reviews and Ratings: Users can leave reviews and ratings for products.
-- Live PayPal Button: Integrated PayPal for live transactions.
-- MongoDB: Utilized for recording
+- **Create Account and Sign In:** Users can create accounts and sign in.
+- **Leave Reviews and Ratings:** Users can leave reviews and ratings for products.
+- **Live PayPal Button:** Integrated PayPal for live transactions.
+- **MongoDB:** Utilized for recording
 
 ![Gif of UserFeatures](./frontend/public/images/UserFeatures.gif)
 
-- Admin Account with Privileges: Admins can manage the site with special privileges.
-- Assign Seller: Option to assign a seller role.
-- Approve and Deliver Products: Admins can approve and deliver paid products.
-- Create New Products: Admins and sellers can add new products.
+- **Admin Account with Privileges:** Admins can manage the site with special privileges.
+- **Assign Seller:** Option to assign a seller role.
+- **Approve and Deliver Products:** Admins can approve and deliver paid products.
+- **Create New Products:** Admins and sellers can add new products.
 
 
 ![Gif of AdminFeatures](./frontend/public/images/AdminFeatures.gif)
